@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<title>xiangii</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content=" ">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/article.css" rel="stylesheet" type="text/css">
+    <script src="js/font.js"></script>
+    </script>
+</head>
+<body>
+<div class="nav">
+	<ul>
+		<a href="/">
+			<li class="l-btn" ></li>
+		</a>
+    </ul>
+</div>
+
+
+<div class="content">
+	<div class="header clear"><h2>
+		<img src="<%=articleData.author_pic%>" alt="" width="50px" height="50px"style="border-radius:400px;"/>
+	</h2>
+	<p>
+		<%=articleData.author%>
+	</p>
+</div>
+    <div class="cont">
+    	<h3><%=articleData.title%></h3>
+        <div class="time"><p>  <%=articleData.post_time%> <span><img src="img/zan.png" alt=""/></span></p></div>
+        <div class="text-box">
+			
+            <p>
+            	<%-articleData.content%>
+			</p>   
+			
+        </div>
+    </div>
+</div>
+<div class="foot-btn">
+	<ul>
+    	<li class="say"><a href="javascript:;">
+        	<i></i><span>0</span>
+        </a></li>
+    	<li class="zan"><a href="/article?id=<%=articleData.id%>&act=like">
+        	<i></i><span>
+
+				<%=articleData.n_like%>
+			</span>
+        </a></li>
+    	<li class="xing"><a href="javascript:;">
+        	<i><img src="img/xing.png" alt=""/></i>
+        </a></li>
+    	<li class="fx"><a href="javascript:;">
+        	<i><img src="img/fx.png" alt=""/></i>
+        </a></li>
+    </ul>
+</div>
+</body>
+</html>
