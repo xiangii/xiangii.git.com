@@ -3,9 +3,9 @@ api接口
         '/article?id=xxx' 打开文章详情页面
         '/article?id=xxx&act=like' 点赞
         
-***********************************************
+
 数据字典
-使用的mysql数据库
+使用的mysql数据库<br/>
 1.banner(banner_table)
 	id
 	title		标题		varchar(100)
